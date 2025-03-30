@@ -1,0 +1,127 @@
+/* ✅ สไตล์สำหรับฟอร์มสร้างโครงการ */
+body {
+  font-family: 'Noto Sans Thai', sans-serif;
+  background-color: #f8fafc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar-inner {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: #2563eb;
+}
+
+.navbar .user-info {
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.navbar .badge-admin {
+  background: #f59e0b;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  margin-left: 5px;
+}
+
+.navbar .btn-login,
+.navbar .btn-logout {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.navbar .btn-login:hover,
+.navbar .btn-logout:hover {
+  background-color: #1d4ed8;
+}
+
+
+
+.form-container {
+  max-width: 600px;
+  margin: 120px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form-container h2 {
+  color: #1d4ed8;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #1d4ed8;
+}

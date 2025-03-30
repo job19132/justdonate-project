@@ -1,0 +1,196 @@
+/* ✅ โครงสร้างหลัก */
+body {
+    font-family: 'Noto Sans Thai', sans-serif;
+    background-color: #f8fafc;
+    color: #1f2937;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #1d4ed8;
+  }
+  
+  /* ✅ Navbar */
+  .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .navbar-inner {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #1d4ed8;
+    text-decoration: none;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    color: #2563eb;
+  }
+  
+  .user-info {
+    font-size: 1rem;
+    color: #1f2937;
+  }
+  
+  .badge-admin {
+    background: #f59e0b;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    margin-left: 5px;
+  }
+  
+  .btn-login,
+  .btn-logout {
+    background-color: #2563eb;
+    color: white;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: 0.3s;
+  }
+  
+  .btn-login:hover,
+  .btn-logout:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* ✅ การ์ดโครงการ */
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* เพิ่มการขยายขนาดการ์ดเมื่อ hover */
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .project-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #1f2937;
+  }
+  
+  .project-card p {
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin: 5px 0;
+  }
+  
+  .donate-button {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #10b981;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  .donate-button:hover {
+    background-color: #059669;
+  }
+
+  .btn-delete {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #e11d48;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-delete:hover {
+    background-color: #be123c;
+  }
+  
+  /* 📱 ปรับสำหรับมือถือ */
+  @media screen and (max-width: 768px) {
+    .navbar-inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .project-list {
+      padding: 15px; /* ลด padding ในมือถือ */
+    }
+  
+    .project-card {
+      padding: 15px; /* ปรับ padding ของการ์ด */
+    }
+  
+    .project-card img {
+      height: 150px; /* ลดขนาดรูปให้เหมาะสมกับมือถือ */
+    }
+  
+    .project-info h3 {
+      font-size: 1rem; /* ลดขนาดตัวอักษรของชื่อโครงการ */
+    }
+  
+    .project-info p {
+      font-size: 0.85rem; /* ลดขนาดข้อความให้เล็กลง */
+    }
+  
+    .donate-button {
+      font-size: 0.9rem; /* ปรับขนาดปุ่มให้เหมาะกับหน้าจอเล็ก */
+    }
+    .btn-delete {
+        font-size: 0.9rem;
+      }
+  }
+  

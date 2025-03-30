@@ -1,0 +1,202 @@
+/* ✅ support.css - รูปแบบที่เหมาะสมสำหรับหน้า สนับสนุนโครงการ */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;700&display=swap");
+
+/* ✅ พื้นฐาน */
+body {
+  font-family: 'Noto Sans Thai', sans-serif;
+  background: linear-gradient(135deg, #fef9f4, #f4f6f8);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+/* ✅ Navbar */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .navbar-inner {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #1d4ed8;
+    text-decoration: none;
+  }
+  
+  .navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .navbar nav a {
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: 500;
+  }
+  
+  .navbar nav a:hover {
+    color: #2563eb;
+  }
+  
+  .navbar .user-info {
+    font-size: 1rem;
+    color: #1f2937;
+  }
+  
+  .navbar .badge-admin {
+    background: #f59e0b;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    margin-left: 5px;
+  }
+  
+  .navbar .btn-login,
+  .navbar .btn-logout {
+    background-color: #2563eb;
+    color: white;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: 0.3s;
+  }
+  
+  .navbar .btn-login:hover,
+  .navbar .btn-logout:hover {
+    background-color: #1d4ed8;
+  }
+  
+  
+
+/* ✅ Support Container */
+.support-container {
+  width: 100%;
+  max-width: 900px;
+  padding: 80px 20px 20px; /* เพิ่ม padding เพื่อให้เนื้อหาห่างจาก navbar */
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project-details {
+  margin-bottom: 40px;
+}
+
+.project-title {
+  font-size: 24px;
+  color: #2d4059;
+  margin-bottom: 10px;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-description {
+  font-size: 16px;
+  color: #607d8b;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.project-goal,
+.project-raised {
+  font-size: 18px;
+  color: #4b5563;
+  margin: 10px 0;
+}
+
+/* ✅ Support Form */
+.support-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.amount-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+}
+
+.donate-button {
+  padding: 14px;
+  background: #059669;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  transition: background 0.3s ease;
+}
+
+.donate-button:hover {
+  background: #038755;
+}
+
+/* ✅ สำหรับมือถือ */
+@media screen and (max-width: 768px) {
+  .support-container {
+    padding: 50px 15px;
+  }
+
+  .project-title {
+    font-size: 22px;
+  }
+
+  .project-description {
+    font-size: 14px;
+  }
+
+  .project-goal,
+  .project-raised {
+    font-size: 16px;
+  }
+
+  .amount-input {
+    font-size: 14px;
+  }
+
+  .donate-button {
+    font-size: 14px;
+  }
+}
