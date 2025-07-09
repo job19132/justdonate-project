@@ -6,6 +6,8 @@
   <title>สมัครสมาชิก</title>
   <link rel="stylesheet" href="/css/register.css" />
   <link rel="icon" href="data:,">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
 </head>
 <body>
 
